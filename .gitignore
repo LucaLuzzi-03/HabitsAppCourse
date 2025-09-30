@@ -1,0 +1,78 @@
+# Gradle files
+.gradle/
+**/build/
+!gradle-wrapper.jar
+gradle-app.setting
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+.idea/caches
+.idea/libraries
+.idea/shelf
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Keystore files (DO NOT IGNORE if you want to share them securely)
+*.jks
+*.keystore
+
+# Generated files
+captures/
+output.json
+*.ap_
+
+# NDK
+obj/
+.externalNativeBuild/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin/Java
+*.class
+
+# Android Gradle Plugin
+.cxx/
+
+# Firebase / Crashlytics
+google-services.json
+fabric.properties
+
+# IntelliJ
+*.ipr
+*.iws
+
+# Packaging
+*.apk
+*.apks
+*.aab
+*.aar
+*.dex
+*.class
+*.so
+*.jar
+
+# Jetpack Compose Preview caches
+.idea/deploymentTargetDropDown.xml
+.idea/compose-preview.cache
+.idea/compose-build/
+
+# Environment & Secrets
+.env
+.env.*
+*.env
+secrets.properties
+
+# Misc
+*.orig
+*.swp
+*.tmp
