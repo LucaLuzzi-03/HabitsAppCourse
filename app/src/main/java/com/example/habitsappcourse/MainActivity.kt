@@ -8,9 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.habitsappcourse.ui.theme.HabitsAppCourseTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,28 +18,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             HabitsAppCourseTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Text(
+                        modifier = Modifier
+                            .padding(innerPadding),
+                        text = "Hello Android!")
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HabitsAppCourseTheme {
-        Greeting("Android")
     }
 }
