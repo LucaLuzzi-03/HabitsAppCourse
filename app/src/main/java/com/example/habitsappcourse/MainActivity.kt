@@ -9,6 +9,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
+import com.example.habitsappcourse.navigation.NavigationHost
+import com.example.habitsappcourse.navigation.NavigationRoute
 import com.example.habitsappcourse.ui.theme.HabitsAppCourseTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,10 +21,16 @@ class MainActivity : ComponentActivity() {
         setContent {
             HabitsAppCourseTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    val navController = rememberNavController()
+                    NavigationHost(
+                        navHostController = navController,
+                        startDestination = NavigationRoute.OnBoarding
+                    )
                     Text(
                         modifier = Modifier
                             .padding(innerPadding),
-                        text = "Hello Android!")
+                        text = "Hello Android!"
+                    )
                 }
             }
         }
